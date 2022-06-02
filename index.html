@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Survey</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Fill in the survey below:</h1>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group"> <label for="favorite-food">Your Favorite Food</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="Apples" checked>
+              Apples
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="Ribs">
+              Ribs
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="Yogurt">
+              Yogurt
+            </label>
+          </div>
+        </div>
+        <div class="form-group"> <label for="music">Favorite Genre of Music</label>
+          <select class="form-control" id="music">
+            <option>Rock</option>
+            <option>Rap</option>
+            <option>EDM</option>
+            <option>Country</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        
+
+        <button type="submit" class="btn">Show the story!</button>
+        <!-- CLOSE BUTTON ATTEMPT
+        <button type="reset" class="btn">Hide the story</button>
+        -->
+      </form>
+    </div>
+    <div id="story">
+      <h1>Survey Results:</h1>
+      <p>Your Name: <strong><span class="name"></span></strong></p>
+      <p>Favorite Food: <strong><span class="flavor"></span></strong></p>
+      <p>Favorite Music Genre: <strong><span class="music"></span></strong></p>
+      <p>DOB: <strong><span class="born"></span></strong></p>
+      <p>Favorite Color: <strong><span class="color"></span></strong></p>
+    </div>
+  </div>
+</body>
+</html>
